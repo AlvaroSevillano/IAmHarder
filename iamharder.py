@@ -37,7 +37,6 @@ class IAmHarder:
     def complete_task(self):
 
         if not self.is_dev:
-            logger.info('Waiting until 2 minutes before')
             self.wait_until(wait_time='23:58', timezone='Europe/Madrid')
 
         logger.info('Its time to start')
@@ -134,7 +133,9 @@ class IAmHarder:
     @staticmethod
     def init_browser():
         logger.info('Trying Browser')
-        driver = webdriver.Chrome()
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument('--no-sandbox')
+        driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=chrome_options)
         init_cont = 0
         while init_cont < 5:
             try:
