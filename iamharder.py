@@ -90,6 +90,10 @@ class IAmHarder:
                                                               max_time=20))
             self.driver.find_element_by_id("nextDay").click()
 
+        logger.info('Waiting for {}'.format(strings_check_date[n_days]))
+        self.manage_waiting_elements(self.wait_until_text(self.driver, strings_check_date[n_days],
+                                                          max_time=20))
+
         logger.info('Correct Day Selected')
 
     def find_button(self, type_class, time_class):
