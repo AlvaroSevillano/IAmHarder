@@ -130,6 +130,8 @@ class IAmHarder:
             time.sleep(self.waiting_time + 3)
             logger.info('Pushing button to make reservation')
             button.click()
+            time.sleep(5)
+            logger.info('Pushing button to make reservation')
             self.find_button(['Open'], '11:00 - 12:00').click()
             self.manage_waiting_elements(self.wait_until_text(self.driver, 'Cancelar reserva', max_time=20))
             logger.info('Reservation is ok')
