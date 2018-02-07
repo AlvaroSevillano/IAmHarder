@@ -4,6 +4,7 @@ import logging as logger
 import pytz
 import time
 from selenium import webdriver
+import random
 
 class IAmHarder:
 
@@ -40,6 +41,7 @@ class IAmHarder:
             self.wait_until(wait_time='23:58', timezone='Europe/Madrid')
 
         logger.info('Its time to start')
+        time.sleep(random.uniform(0, 2))
         self.log_in()
         self.book_CF()
         self.end_browser()
