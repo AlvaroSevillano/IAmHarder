@@ -19,6 +19,7 @@ def get_profiles():
                          'blas': ['k7_haltero', 'vladisimon@gmail.com', 'abc123456+', 4],
                          'chema': ['k7_haltero', 'jmruedahernandez@gmail.com', 'alvaromola1000', 7],
                          'horacio': ['k8_haltero', 'halcala@gmail.com', 'Klan8Madrid', 8],
+                         'jaime': ['k7_haltero', 'jaimillor90@msn.com', 'KlanCrossfit14', 10],
                          'javi': ['k7_haltero', 'javialonsoramirez@gmail.com', 'Capricho1303', 6],
                          'jonas': ['k8_haltero', 'juanfrcarro@gmail.com', 'jonas47352436J', 8],
                          'koldo': ['k7', 'kolabarri@gmail.com', 'koldoklan', 5],
