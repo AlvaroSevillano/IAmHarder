@@ -13,7 +13,7 @@ def get_profiles():
                 'k8_haltero': [int_time_k8, [haltero, crossfit, gymnastics, endurance]],
                 'k8_endurance': [int_time_k8, [endurance, haltero, crossfit, gymnastics]]}
 
-    assigned_profiles = {'alberto': ['k7_haltero', 'albertogarciamoreno0@gmail.com', 'Bradybooth12', 5],
+    assigned_profiles = {'alberto': ['k8_haltero', 'albertogarciamoreno0@gmail.com', 'Bradybooth12', 5],
                          'alvaro': ['k7_haltero', 'yuhp14@hotmail.com', 'alvaro88', 2],
                          'ana': ['k7_haltero', 'anaglezgciagc@yahoo.es', 'Aimharder456', 6],
                          'andoni': ['k7_haltero', 'andoniruiz@hotmail.com', 'molotov0', 5],
