@@ -86,8 +86,9 @@ class IAmHarder:
     def go_to_desire_day(self, n_days):
 
         strings_check_date = self.get_string_check_date(self.today)
+        time.sleep(3)
         for i in range(0, n_days):
-            time.sleep(0.3)
+            time.sleep(3)
             logger.info('Waiting for {}'.format(strings_check_date[i]))
             self.manage_waiting_elements(self.wait_until_text(self.driver, strings_check_date[i],
                                                               max_time=20))
